@@ -23,7 +23,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14' # 选择你想要的 Node.js 版本
+        node-version: '20' # 选择你想要的 Node.js 版本
 
     - name: Install dependencies
       run: npm install
@@ -31,7 +31,9 @@ jobs:
     - name: Run index.js
       run: node ./index.js
   
-    - name: Commit
+    - name: Commit and push changes
       uses: EndBug/add-and-commit@v9
       with:
-        message: 'chore: update data'
+        author_name: dongyubin
+        author_email: 892457803@qq.com
+        message: chore update data
