@@ -40,7 +40,7 @@ async function parseLink(Link) {
           domain: domain,
           title: data.title,
           desc: data.desc,
-          pic: `${(data.pic).replace('http:','')}`,
+          pic: data.pic,
           ctime: moment.unix(data.pubdate).format('YYYY-MM-DD HH:mm:ss'),
           viewsCount: data.stat.view,
           commentsCount: data.stat.reply + data.stat.danmaku,
