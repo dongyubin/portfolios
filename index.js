@@ -109,7 +109,7 @@ async function parseLink(Link) {
           domain: domain,
           title: repoData.full_name,
           desc: repoData.description,
-          pic: `https://diygod.cc/_next/image?url=https://opengraph.githubassets.com/2aa549d9c0277772e6917a228d28ddec52d24e9c9589e15806a173ccb1e597aa/${url.pathname.split("/")[1]}/${url.pathname.split("/")[2]}&w=1920&q=75`,
+          pic: `https://xlog.app/cdn-cgi/image/width=1920,quality=75,format=auto,onerror=redirect/https://opengraph.githubassets.com/8d86d6c69d196e84ea81c65ce0b4f74f82f4484eb5a6cd8b2f32d670fd10aea7/${url.pathname.split("/")[1]}/${url.pathname.split("/")[2]}`,
           ctime: moment(repoData.created_at).format('YYYY-MM-DD HH:mm:ss'),
           viewsCount: repoData.stargazers_count,
           commentsCount: issuesData
